@@ -1,6 +1,10 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
+
+mainClassName = 'TamagoBot'
 
 group 'cow.notcow'
 version '1.0-SNAPSHOT'
@@ -12,4 +16,6 @@ repositories {
 
 dependencies {
     compile 'net.dv8tion:JDA:4.2.0_224'
+    compile "org.slf4j:slf4j-simple:1.7.9"
 }
+
